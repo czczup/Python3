@@ -54,5 +54,5 @@ def printSummary(winsA,winsB):
     print("\nGames simulated:%d"%n)
     print("Wins for A:{0}({1:0.1%})".format(winsA,winsA/n))
     print("Wins for B:{0}({1:0.1%})".format(winsB,winsB/n))
-    
-main()
+if __name__ == '__main__':
+    main()
