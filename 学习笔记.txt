@@ -507,11 +507,89 @@ class classname[(父类名)]:[成员函数及成员变量]
 •编写程序
 •以对象为单位输入参数、开展测试
 
+封装
+•从业务逻辑中抽象对象时，赋予对象相关数据与操作，把一些数据和操作打包在一起的过程就是封装
+•对象的实现和使用是独立的
+•支持代码复用
 
+举例：封装
+•Projectile将投射体属性和方法封装在类的内部
+•不必关系铅球内部如何实现
+•Projectile类可以被多个程序、多个对象所使用
 
+多态
+•对象怎么回应一个依赖于对象类型或种类的消息
+•在不同情况下用一个函数名启用不同方法
+•灵活性
 
+举例：多态
+•一个图形对象列表
+•Circle、Rectangle、Polygon
+•使用相同代码可以画出列表中的所有图形
 
+继承
+•一个类可以借用另一个类的行为
+•避免重复操作
+•提升代码复用程度
 
+举例：继承
+•员工信息系统
+•Employee类 #包含所有员工的通用一般信息
+    •Employee类属性homeAddress() #返回员工住址信息
+•Employee子类：SalariedEmployee和HourlyEmployee
+    •共享homeAddres()属性
+    •自己monthlyPay()属性
+
+现代计算机的图形图像应用
+•图形用户界面
+•图形对象
+•照片管理软件等
+
+图形显示
+•图素法——矢量图
+    •以图形对象为基本元素组成的图形，如矩形、圆形
+•像素法——标量图
+    •以像素点为基本单位组成图形
+
+Python图形工具包
+•tkinter(简称tk接口)
+•Graphics
+•turtle
+
+图形用户界面
+•Graphical User Interface，GUI
+•Tkinter,Python标准GUI
+•Graphics，基于Tkinter拓展图形库
+•Turtle，Python内置的图形库
+
+举例：单图形编程
+•第一步，导入图形模块
+>>>import graphics
+•第二步，创建图形窗口
+>>>win = graphics.GraphWin()
+•最后，关闭窗口
+>>>win.close()
+
+更简洁的代码方式
+from graphics import *
+win = GraphWin()
+
+图形窗口
+•点(像素)的集合
+•GraphWin对象尺寸默认值
+    •高200像素，宽200像素
+
+点对象Point
+•图形模块中最简单的对象
+•参考坐标系定位
+•坐标(x,y)
+
+参考坐标系
+•Graphics\Tkinter
+    •点(0,0)表示屏幕左上角
+•X轴正方向为从左到右
+•Y轴正方向为从上到下
+•默认窗口大小为200*200
 
 
 
