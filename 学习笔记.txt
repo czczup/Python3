@@ -591,6 +591,122 @@ win = GraphWin()
 •Y轴正方向为从上到下
 •默认窗口大小为200*200
 
+类的实例
+•类定义了实例包含的属性和方法
+•两个独立的point实例：p1和p2
+    •每一个实例点都有x,y值
+    •getX()和draw()
+    •不同的实例可以有不同的属性值
+
+创建点对象
+>>>from graphics import *
+>>>p = Point(50,60)
+•Point类的构造函数两个参数:x和y
+•储存在对象的实例变量中
+•创建Point类对象，大多数类属性被设为默认值
+•调用无参数方法
+>>>p.getX()
+50
+>>>p.getY()
+60
+•访问对象实例变量的内部属性
+•改变对象实例变量的属性值改变对象的状态
+    •move(x,y)方法
+    >>>p.move(10,0)
+    •清除原来点的图像，并在新位置重新绘制
+    •两个数字参数：x,y
+
+交互式图形用户接口
+•图形用户界面(图形用户接口)
+    •采用图形方式显示的计算机操作用户界面
+    •用于程序的输入和输出
+    •事件驱动
+•事件
+    •移动鼠标
+    •点击按钮
+        •按钮事件
+	•按钮处理代码
+    •键盘输入
+事件驱动程序需要编程人员指导任何指定的时刻谁在负责
+•Graphics模块
+    •隐藏了底层事件的处理机制
+    •提供了获得用户在窗口中的输入
+	•捕捉鼠标点击
+	•处理文本输入
+•Text对象:setText()和getText()
+•Entry对象:setText()和getText()
+    •内容可以被用户修改
+
+使用Tkinter创建GUI程序的基本步骤
+•导入Tkinter模块
+•创建GUI应用程序的主窗口
+•添加控件或GUI应用程序
+•进入主事件循环，等待响应用户触发事件
+
+十五种常见的Tk控件
+Button,Canvas,Checkbutton,Entry
+Frame,Label,Listbox,Menubutton
+Menu,Message,Radiobutton,Scale
+Scrollbar,Text,Toplevel,Spinbox
+PanedWindow,LabelFrame,tkMessageBox
+
+•共同属性
+    •Dimensions:尺寸
+    •Colors:颜色
+    •Fonts:字体
+    •Anchors:锚
+    •Relief styles:浮雕式
+    •Bitmaps:显示位图
+    •Cursors:光标的外形
+•特有属性
+
+界面布局
+•Tkinter三种几何管理方法
+    •pack()
+    •grid()
+    •place()
+
+Turtle库
+•Python内置图形化模块
+pendown()         放下画笔，移动到指定点后继续绘制
+penup()           提起画笔，用于另起一个地方绘制时用，与pendown（配合使用）
+pensize(width)    设置画笔线条的粗细为指定大小
+•运动方法
+forward()         沿着当前方向前进指定距离
+backward()        沿着当前相反方向后退指定距离
+right(angle)      向右旋转angle角度
+left(angle)       向左旋转angle角度
+goto(x,y)         移动到绝对坐标(x,y)处
+setx()            将当前x轴移动到指定位置
+sety()            将当前y轴移动到指定位置
+setheading(angle) 设置当前朝向为angle角度
+home()            设置当前画笔位置为原点，朝向东
+circle()          绘制一个指定半径，角度、以及步骤的圆圈
+dot(r)            绘制一个指定直径和颜色的圆点
+undo()            撤销画笔最后一步动作
+speed()           设置画笔的绘制速度，参数为0-10 
+•颜色和字体绘制方法
+color()           设置画笔的颜色 
+begin_fill()      填充图形前调用
+end_fill()        填充图形结束 
+filling()         返回填充的状态，true为填充，false为未填充
+clear()           清空当前窗口，但不改变画笔位置
+reset()           清空当前窗口，并重置位置为默认值
+screensize()      设置画布的长和宽
+hideturtle()      隐藏画笔的turtle形状
+showturtle()      显示画笔的turtle形状
+isvisible()       如果可见返回true
+write()           输出font字体的字符串
+
+
+
+
+
+
+
+
+
+
 
 
 
